@@ -1,4 +1,6 @@
 import { ReactElement } from "react";
+import { ComposeContexts } from "./ComposeContexts";
+import { PunchCardProvider } from "./PunchCard";
 
 type ContextWrapperProps = {
   children: ReactElement | ReactElement[];
@@ -7,5 +9,7 @@ type ContextWrapperProps = {
 export const ContextWrapper = (props: ContextWrapperProps) => {
   const { children } = props;
 
-  return <>{children}</>;
+  return (
+    <ComposeContexts contexts={[PunchCardProvider]}>{children}</ComposeContexts>
+  );
 };

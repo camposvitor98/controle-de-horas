@@ -8,14 +8,16 @@
     "dev:server": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "server": "json-server -w server.json -p 3333"
+    "server": "json-server -w mock-api.json -p 3333 -d 500"
   },
   "dependencies": {
     "axios": "^1.0.0",
+    "date-fns": "^2.29.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.4.1",
+    "react-toastify": "^9.0.8",
     "scheduler": "^0.23.0",
     "styled-components": "^5.3.6",
     "use-context-selector": "^1.4.1"
